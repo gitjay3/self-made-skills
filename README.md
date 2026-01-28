@@ -12,12 +12,14 @@
 
 ### Claude Code에서 설치
 
+터미널에서 아래 명령어를 실행하세요:
+
 ```bash
 # 1. 마켓플레이스 추가
-/plugin marketplace add gitjay3/self-made-skills
+claude plugin marketplace add gitjay3/self-made-skills
 
 # 2. 플러그인 설치
-/plugin install troubleshoot-logger@self-made-skills
+claude plugin install troubleshoot-logger@self-made-skills
 ```
 
 ### 로컬 테스트
