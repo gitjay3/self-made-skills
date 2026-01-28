@@ -21,12 +21,6 @@ STAR 기법 + 근본 원인 분석으로 트러블슈팅 과정을 자동 기록
 /plugin install troubleshoot-logger@self-made-skills
 ```
 
-### 로컬 테스트
-
-```bash
-claude --plugin-dir ./plugins/troubleshoot-logger
-```
-
 ## 사용법
 
 ### 자동 호출
