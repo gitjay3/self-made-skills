@@ -19,8 +19,19 @@
 claude plugin marketplace add gitjay3/self-made-skills
 
 # 2. 플러그인 설치
-claude plugin install troubleshoot-logger@self-made-skills
+claude plugin install troubleshoot-logger@self-made-skills                  # User: 모든 프로젝트에서 사용 (기본값)
+claude plugin install troubleshoot-logger@self-made-skills --scope project  # Project: 팀원 모두 공유 (git에 포함)
+claude plugin install troubleshoot-logger@self-made-skills --scope local    # Local: 이 프로젝트에서 나만 사용
+
+# 삭제
+claude plugin uninstall troubleshoot-logger@self-made-skills
+claude plugin uninstall troubleshoot-logger@self-made-skills --scope project
 ```
+
+### 설치 확인
+
+- Claude Code에서 `/plugin` → Installed 탭
+- 파일: `~/.claude/plugins/installed_plugins.json`
 
 <br>
 
