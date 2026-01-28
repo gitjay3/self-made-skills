@@ -1,14 +1,14 @@
 # Self-Made Skills
 
-[![License](https://img.shields.io/badge/License-MIT-da7756?style=flat-square)](./LICENSE)
-[![Plugins](https://img.shields.io/badge/Plugins-1-da7756?style=flat-square)](#plugins)
-[![Platform](https://img.shields.io/badge/Claude_Code-da7756?style=flat-square&logo=anthropic&logoColor=white)](https://code.claude.com)
+[![License](https://img.shields.io/badge/License-MIT-da7756?style=flat)](./LICENSE)
+[![Plugins](https://img.shields.io/badge/Plugins-1-da7756?style=flat)](#plugins)
+[![Platform](https://img.shields.io/badge/Claude_Code-da7756?style=flat&logo=anthropic&logoColor=white)](https://code.claude.com)
 
 직접 만든 Claude Code 플러그인 & 스킬 모음입니다.
 
 <br>
 
-## ![Quick Start](https://img.shields.io/badge/Quick_Start-da7756?style=flat-square)
+## <img src="https://img.shields.io/badge/Quick_Start-da7756?style=flat" height="25">
 
 ### Claude Code에서 설치
 
@@ -30,7 +30,7 @@ claude --plugin-dir ./plugins/troubleshoot-logger
 
 <br>
 
-## ![Plugins](https://img.shields.io/badge/Plugins-da7756?style=flat-square)
+## <img src="https://img.shields.io/badge/Plugins-da7756?style=flat" height="25">
 
 | 플러그인 | 설명 | 버전 |
 |---------|------|------|
@@ -38,7 +38,7 @@ claude --plugin-dir ./plugins/troubleshoot-logger
 
 <br>
 
-## ![Details](https://img.shields.io/badge/Details-da7756?style=flat-square)
+## <img src="https://img.shields.io/badge/Details-da7756?style=flat" height="25">
 
 ### troubleshoot-logger
 
@@ -111,7 +111,7 @@ API 응답 시간을 500ms 이하로 줄여야 함...
 
 <br>
 
-## ![Structure](https://img.shields.io/badge/Structure-da7756?style=flat-square)
+## <img src="https://img.shields.io/badge/Structure-da7756?style=flat" height="25">
 
 ```
 self-made-skills/
@@ -131,7 +131,7 @@ self-made-skills/
 
 <br>
 
-## ![Contributing](https://img.shields.io/badge/Contributing-da7756?style=flat-square)
+## <img src="https://img.shields.io/badge/Contributing-da7756?style=flat" height="25">
 
 1. Fork
 2. Branch (`git checkout -b feature/new-skill`)
@@ -141,6 +141,6 @@ self-made-skills/
 
 <br>
 
-## ![License](https://img.shields.io/badge/License-da7756?style=flat-square)
+## <img src="https://img.shields.io/badge/License-da7756?style=flat" height="25">
 
 [MIT](./LICENSE)
