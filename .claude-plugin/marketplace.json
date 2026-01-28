@@ -1,0 +1,19 @@
+{
+  "name": "self-made-skills",
+  "owner": {
+    "name": "jmac"
+  },
+  "metadata": {
+    "description": "직접 만든 Claude Code 스킬 모음",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "troubleshoot-logger",
+      "source": "./plugins/troubleshoot-logger",
+      "description": "STAR 기법으로 트러블슈팅 과정을 자동 기록하는 플러그인",
+      "version": "1.0.0",
+      "keywords": ["troubleshooting", "logging", "STAR", "documentation"]
+    }
+  ]
+}

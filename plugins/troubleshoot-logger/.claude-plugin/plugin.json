@@ -1,0 +1,11 @@
+{
+  "name": "troubleshoot-logger",
+  "description": "STAR 기법으로 트러블슈팅 과정을 자동 기록하는 플러그인",
+  "version": "1.0.0",
+  "author": {
+    "name": "jmac"
+  },
+  "repository": "https://github.com/jmac/troubleshoot-logger",
+  "license": "MIT",
+  "keywords": ["troubleshooting", "logging", "STAR", "documentation"]
+}
