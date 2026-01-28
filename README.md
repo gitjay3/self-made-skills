@@ -8,7 +8,7 @@
 
 <br>
 
-## <img src="https://img.shields.io/badge/Quick_Start-da7756?style=flat" height="25">
+## 🚀 Quick Start
 
 ### Claude Code에서 설치
 
@@ -30,7 +30,7 @@ claude --plugin-dir ./plugins/troubleshoot-logger
 
 <br>
 
-## <img src="https://img.shields.io/badge/Plugins-da7756?style=flat" height="25">
+## 📦 Plugins
 
 | 플러그인 | 설명 | 버전 |
 |---------|------|------|
@@ -38,7 +38,7 @@ claude --plugin-dir ./plugins/troubleshoot-logger
 
 <br>
 
-## <img src="https://img.shields.io/badge/Details-da7756?style=flat" height="25">
+## 📖 Details
 
 ### troubleshoot-logger
 
@@ -111,7 +111,7 @@ API 응답 시간을 500ms 이하로 줄여야 함...
 
 <br>
 
-## <img src="https://img.shields.io/badge/Structure-da7756?style=flat" height="25">
+## 🗂️ Structure
 
 ```
 self-made-skills/
@@ -131,7 +131,7 @@ self-made-skills/
 
 <br>
 
-## <img src="https://img.shields.io/badge/Contributing-da7756?style=flat" height="25">
+## 🤝 Contributing
 
 1. Fork
 2. Branch (`git checkout -b feature/new-skill`)
@@ -141,6 +141,6 @@ self-made-skills/
 
 <br>
 
-## <img src="https://img.shields.io/badge/License-da7756?style=flat" height="25">
+## 📄 License
 
 [MIT](./LICENSE)
