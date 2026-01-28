@@ -17,7 +17,7 @@ STAR 기법 + 근본 원인 분석으로 트러블슈팅 과정을 자동 기록
 ### 마켓플레이스에서 설치
 
 ```bash
-/plugin marketplace add your-username/self-made-skills
+/plugin marketplace add gitjay3/self-made-skills
 /plugin install troubleshoot-logger@self-made-skills
 ```
 

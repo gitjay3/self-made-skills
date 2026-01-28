@@ -3,9 +3,9 @@
   "description": "STAR 기법으로 트러블슈팅 과정을 자동 기록하는 플러그인",
   "version": "1.0.0",
   "author": {
-    "name": "jmac"
+    "name": "jspark"
   },
-  "repository": "https://github.com/jmac/troubleshoot-logger",
+  "repository": "https://github.com/gitjay3/self-made-skills",
   "license": "MIT",
   "keywords": ["troubleshooting", "logging", "STAR", "documentation"]
 }
