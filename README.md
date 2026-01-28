@@ -22,14 +22,6 @@ claude plugin marketplace add gitjay3/self-made-skills
 claude plugin install troubleshoot-logger@self-made-skills
 ```
 
-### 로컬 테스트
-
-```bash
-git clone https://github.com/gitjay3/self-made-skills.git
-cd self-made-skills
-claude --plugin-dir ./plugins/troubleshoot-logger
-```
-
 <br>
 
 ## 📦 Plugins
