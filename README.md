@@ -82,9 +82,10 @@ Claude가 다음 문제를 해결하면 자동으로 기록을 제안합니다:
 
 ```bash
 # 자동: Claude가 문제 해결 후 기록 제안
-# 수동:
-/troubleshoot-logger:log
-/troubleshoot-logger:log api-timeout-fix
+
+# 수동: 자동 제안이 안 뜨거나, 직접 기록하고 싶을 때
+스킬 써서 트러블슈팅 내용 정리해줘
+스킬 써서 방금 해결한 버그 기록해줘
 ```
 
 <br>
