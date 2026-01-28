@@ -15,17 +15,20 @@
 터미널에서 아래 명령어를 실행하세요:
 
 ```bash
-# 1. 마켓플레이스 추가
+# 마켓플레이스 추가
 claude plugin marketplace add gitjay3/self-made-skills
 
-# 2. 플러그인 설치
-claude plugin install troubleshoot-logger@self-made-skills                  # User: 모든 프로젝트에서 사용 (기본값)
-claude plugin install troubleshoot-logger@self-made-skills --scope project  # Project: 팀원 모두 공유 (git에 포함)
-claude plugin install troubleshoot-logger@self-made-skills --scope local    # Local: 이 프로젝트에서 나만 사용
+# 플러그인 설치 - User (기본): 내 모든 프로젝트에서 사용
+claude plugin install troubleshoot-logger@self-made-skills
 
-# 삭제
+# 플러그인 설치 - Project: 팀 공유 (git에 포함됨)
+claude plugin install troubleshoot-logger@self-made-skills --scope project
+
+# 플러그인 설치 - Local: 이 프로젝트에서 나만 사용
+claude plugin install troubleshoot-logger@self-made-skills --scope local
+
+# 플러그인 삭제
 claude plugin uninstall troubleshoot-logger@self-made-skills
-claude plugin uninstall troubleshoot-logger@self-made-skills --scope project
 ```
 
 ### 설치 확인
