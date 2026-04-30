@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "self-made-skills",
   "owner": {
     "name": "jspark"
@@ -13,7 +14,40 @@
       "source": "./plugins/troubleshoot-logger",
       "description": "STAR 기법으로 트러블슈팅 과정을 자동 기록하는 플러그인",
       "version": "1.0.0",
+      "category": "productivity",
       "keywords": ["troubleshooting", "logging", "STAR", "documentation"]
+    },
+    {
+      "name": "learning-logger",
+      "source": "./plugins/learning-logger",
+      "description": "새로 배운 개념·API·문법·패턴을 TIL 형식으로 자동 기록하는 플러그인",
+      "version": "1.0.0",
+      "category": "learning",
+      "keywords": ["til", "learning", "logging", "documentation", "knowledge"]
+    },
+    {
+      "name": "decision-logger",
+      "source": "./plugins/decision-logger",
+      "description": "기술적·아키텍처 의사결정을 ADR 형식으로 자동 기록하는 플러그인",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["adr", "architecture", "decision", "logging", "documentation"]
+    },
+    {
+      "name": "pr-writer",
+      "source": "./plugins/pr-writer",
+      "description": "브랜치 git 컨텍스트를 분석해 구조화된 GitHub PR 제목·본문을 자동 작성하는 플러그인",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["pr", "pull-request", "github", "git", "workflow"]
+    },
+    {
+      "name": "skill-recommender",
+      "source": "./plugins/skill-recommender",
+      "description": "프로젝트와 대화 맥락을 분석해 self-made-skills 마켓의 적절한 플러그인을 추천하는 메타 플러그인",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["meta", "recommendation", "discovery", "marketplace"]
     }
   ]
 }
