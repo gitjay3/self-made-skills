@@ -1,0 +1,15 @@
+{
+  "description": "Route explicit user requests for tool/plugin recommendations to the Skill Recommender (no auto-matching)",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"[Skill Recommender 활성화]\\n\\n사용자가 다음과 같은 요청을 하면 `/skill-recommender:recommend`를 사용하세요:\\n- \\\"이 프로젝트에 어떤 도구가 좋을까?\\\"\\n- \\\"self-made-skills에서 뭐 쓰면 좋아?\\\"\\n- \\\"지금 상황에 맞는 도구 추천해줘\\\"\\n- \\\"어떤 플러그인 깔면 도움될까?\\\"\\n\\n자동 매칭은 하지 마세요. 사용자가 명시적으로 추천을 요청할 때만 호출하세요.\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "skill-recommender",
+  "description": "프로젝트와 대화 맥락을 분석해 self-made-skills 마켓의 적절한 플러그인을 추천하는 메타 플러그인",
+  "version": "1.0.0",
+  "author": {
+    "name": "jspark"
+  }
+}
