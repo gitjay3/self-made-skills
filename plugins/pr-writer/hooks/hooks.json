@@ -1,0 +1,15 @@
+{
+  "description": "Activate PR Writer skill when user requests PR creation, update, or push to GitHub",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"[PR Writer 활성화]\\n\\n사용자가 PR 작성·갱신·올리기 관련 요청(\\\"PR 올려줘\\\", \\\"PR 본문 써줘\\\", \\\"PR 만들어줘\\\", \\\"풀리퀘 작성\\\" 등)을 하면 `/pr-writer:write`를 직접 호출하거나 안내하세요.\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}

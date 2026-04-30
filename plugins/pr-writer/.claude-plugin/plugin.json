@@ -1,0 +1,8 @@
+{
+  "name": "pr-writer",
+  "description": "브랜치 git 컨텍스트를 분석해 구조화된 GitHub PR 제목·본문을 자동 작성하는 플러그인",
+  "version": "1.0.0",
+  "author": {
+    "name": "jspark"
+  }
+}
