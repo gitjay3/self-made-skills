@@ -18,9 +18,9 @@ Gathered automatically before this skill runs:
 - **Recent commits**: !`git log --oneline -20`
 - **Contributors**: !`git log --pretty=format:'%an <%ae>' main..HEAD 2>/dev/null | sort -u || echo "NO_RANGE"`
 - **GH auth**: !`gh auth status 2>&1 || echo "NOT_AUTHENTICATED"`
-- **GH user**: !`gh api user --jq .login 2>&1 || echo "UNKNOWN"`
-- **Open PR**: !`gh pr view --json number,title,body,headRefName,baseRefName 2>&1 || echo "NO_OPEN_PR"`
-- **PR Template (single)**: !`cat .github/pull_request_template.md 2>/dev/null || cat .github/PULL_REQUEST_TEMPLATE.md 2>/dev/null || cat docs/pull_request_template.md 2>/dev/null || echo "NO_TEMPLATE"`
+- **GH user**: !`gh api user --jq .login 2>/dev/null || echo "UNKNOWN"`
+- **Open PR**: !`gh pr view --json number,title,body,headRefName,baseRefName 2>/dev/null || echo "NO_OPEN_PR"`
+- **PR Template (single)**: !`for f in .github/pull_request_template.md .github/PULL_REQUEST_TEMPLATE.md docs/pull_request_template.md; do [ -f "$f" ] && cat "$f" && exit; done; echo "NO_TEMPLATE"`
 - **PR Templates (multi)**: !`ls .github/PULL_REQUEST_TEMPLATE/ 2>/dev/null || echo "NO_MULTI"`
 
 > 만약 base가 `main`이 아닌 다른 브랜치라면 Contributors 명령은 잘못된 결과를 낼 수 있음. 인자 파싱 후 실제 base로 한 번 더 실행.
