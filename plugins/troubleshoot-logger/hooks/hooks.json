@@ -1,4 +1,5 @@
 {
+  "description": "Auto-suggest troubleshooting documentation after Claude resolves errors, bugs, test failures, build failures, or compatibility issues",
   "hooks": {
     "SessionStart": [
       {

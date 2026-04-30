@@ -4,8 +4,5 @@
   "version": "1.0.0",
   "author": {
     "name": "jspark"
-  },
-  "repository": "https://github.com/gitjay3/self-made-skills",
-  "license": "MIT",
-  "keywords": ["troubleshooting", "logging", "STAR", "documentation"]
+  }
 }

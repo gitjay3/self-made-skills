@@ -1,6 +1,6 @@
 ---
 name: log
-description: Automatically logs troubleshooting process using STAR method when errors or bugs are resolved. Use this skill to document problem-solving sessions.
+description: This skill should be used when the user asks to "트러블슈팅 기록", "방금 해결한 버그 기록", "문제 해결 정리", "에러 해결 문서화", "log troubleshooting", "document this fix", or after Claude successfully resolves an error/bug/test failure/build failure/dependency conflict/runtime exception. Captures the troubleshooting process using STAR method (Situation/Task/Action/Result) + 5 Whys root cause analysis + prevention checklist, saved to docs/troubleshooting/YYYY-MM-DD-title.md.
 argument-hint: "[title (optional)]"
 ---
 
