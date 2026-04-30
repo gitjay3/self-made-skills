@@ -1,0 +1,8 @@
+{
+  "name": "learning-logger",
+  "description": "새로 배운 개념·API·문법·패턴을 TIL 형식으로 자동 기록하는 플러그인",
+  "version": "1.0.0",
+  "author": {
+    "name": "jspark"
+  }
+}

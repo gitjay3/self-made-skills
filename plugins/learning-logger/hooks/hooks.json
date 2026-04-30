@@ -1,0 +1,15 @@
+{
+  "description": "Auto-suggest TIL documentation after Claude explains new concepts, APIs, syntax, patterns, or tools to the user",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"[Learning Logger 활성화]\\n\\n새로운 개념, API, 라이브러리 사용법, 문법, 디자인 패턴, 도구·명령어·단축키 등을 사용자가 처음 접하는 내용으로 설명한 후, 사용자에게 다음과 같이 제안하세요:\\n\\\"방금 배운 내용을 TIL로 기록해두시겠어요? (`/learning-logger:log`)\\\"\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}
