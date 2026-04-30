@@ -18,12 +18,18 @@
 # 1. 마켓플레이스 추가 (한 번만)
 /plugin marketplace add gitjay3/self-made-skills
 
-# 2. 플러그인 설치
+# 2. 플러그인 설치 (또는 /plugins GUI에서 클릭으로 설치)
 /plugin install troubleshoot-logger@self-made-skills
-
-# 3. 활성화 (현재 세션에 즉시 반영)
-/reload-plugins
 ```
+
+**3. 플러그인 활성화** (환경별):
+
+- **CLI 환경 (터미널 `claude`)**: `/reload-plugins` 실행
+- **VSCode·JetBrains·기타 IDE extension**: Claude Code 세션 재시작
+  - VSCode: Command Palette → `Developer: Reload Window`
+  - 또는 통합 터미널에서 `claude` 실행 → CLI 모드에서 `/reload-plugins` 사용
+
+> ⚠️ `/reload-plugins`는 CLI 전용 명령으로, VSCode/JetBrains extension에선 동작하지 않습니다. ([공식 docs](https://code.claude.com/docs/en/vs-code#vs-code-extension-vs-claude-code-cli))
 
 **터미널 CLI에서 (스코프 지정 가능)**:
 
