@@ -1,6 +1,6 @@
 ---
 name: write
-description: This skill should be used when the user asks to "PR 올려줘", "PR 본문 써줘", "풀리퀘 만들어줘", "PR 만들어", "PR 갱신", "PR 본문 갱신", "create a PR", "open a pull request", "update PR description", "rewrite PR body", or wants to push a feature branch and open/update a GitHub pull request. Generates PR title (active voice, present-tense verb) and body (Why/Approach/How it works/Test plan/Links sections) from the branch's full git context using gh CLI. Auto-detects existing PR for update mode.
+description: This skill should be used when the user asks to "PR 올려줘", "PR 본문 써줘", "풀리퀘 만들어줘", "PR 만들어", "PR 갱신", "PR 본문 갱신", "create a PR", "open a pull request", "update PR description", "rewrite PR body", or wants to push a feature branch and open/update a GitHub pull request. Generates PR title (active voice, present-tense verb) and body (Why/Approach/How it works/Links sections) from the branch's full git context using gh CLI. Auto-detects existing PR for update mode.
 argument-hint: "[base-branch (default: main)] [language: ko|en]"
 allowed-tools: Bash(git status:*), Bash(git diff:*), Bash(git branch:*), Bash(git log:*), Bash(git push:*), Bash(gh auth status:*), Bash(gh pr view:*), Bash(gh pr create:*), Bash(gh pr edit:*)
 ---
@@ -93,12 +93,6 @@ Template:
 - 변경된 공개 인터페이스
 - 추가된 의존성
 - 데이터 흐름·시퀀스
-
-## Test plan
-
-- [ ] 단위 테스트 추가/갱신
-- [ ] 수동 검증 시나리오
-- [ ] 영향 범위 회귀 확인
 
 ## Links
 

@@ -207,7 +207,7 @@ Claude가 다음 의사결정을 감지하면 자동으로 기록을 제안합�
 
 - 브랜치 전체 커밋·diff 종합 분석 (마지막 커밋이 아닌 누적 결과)
 - 능동태 현재형 동사 PR 제목 (영어 기본, 한국어 옵션)
-- 한국어 PR 본문 (Why / Approach / How it works / Test plan / Links)
+- 한국어 PR 본문 (Why / Approach / How it works / Links)
 - 신규 PR + 기존 PR 갱신 모드 자동 분기
 - AI/Claude 표현·`Co-Authored-By` 자동 배제
 

@@ -6,7 +6,7 @@
 
 - 브랜치 전체 커밋·diff를 종합 분석 (마지막 커밋이 아닌 누적 결과)
 - 능동태 현재형 동사 PR 제목 (영어 기본, 한국어 옵션)
-- 한국어 PR 본문 (Why / Approach / How it works / Test plan / Links)
+- 한국어 PR 본문 (Why / Approach / How it works / Links)
 - 신규 PR 생성 + 기존 PR 본문 갱신 모드 자동 분기
 - 푸시 안 된 커밋 자동 감지·안내
 - AI/Claude 표현·`Co-Authored-By` 자동 배제
@@ -83,12 +83,6 @@ JWT(`jsonwebtoken`)로 stateless 인증을 도입하고, refresh token을 별도
 - 미들웨어 `requireAuth`로 보호 라우트 적용
 - Redis에 refresh token 저장 (TTL 14일)
 - 의존성 추가: `jsonwebtoken`, `ioredis`
-
-## Test plan
-
-- [x] 단위 테스트: token 생성·검증·만료
-- [ ] 통합 테스트: 보호 라우트 접근 시나리오
-- [ ] 회귀 확인: 기존 세션 사용자 마이그레이션 경로
 
 ## Links
 
