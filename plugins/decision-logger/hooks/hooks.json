@@ -1,0 +1,15 @@
+{
+  "description": "Auto-suggest ADR documentation after significant technical or architectural decisions are made (library/framework/database/pattern selection)",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"[Decision Logger 활성화]\\n\\n라이브러리/프레임워크/DB/디자인 패턴/아키텍처 선택 같은 의미 있는 기술적 의사결정이 일어난 직후, 사용자에게 다음과 같이 제안하세요:\\n\\\"방금 결정한 내용을 ADR로 기록해두시겠어요? (`/decision-logger:log`)\\\"\\n\\n다음 신호를 의사결정 모먼트로 감지하세요:\\n- 명시적: \\\"X로 가자\\\", \\\"X 채택하자\\\", \\\"이거 결정해야 해\\\"\\n- 암묵적: 라이브러리·프레임워크·DB 비교 토론, 아키텍처 패턴(Event Sourcing, CQRS 등) 선택, 인프라 선택(AWS vs GCP, monolith vs microservice 등)\"}}'"
+          }
+        ]
+      }
+    ]
+  }
+}
