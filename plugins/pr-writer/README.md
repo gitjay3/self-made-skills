@@ -165,8 +165,8 @@ Co-authored-by: Alice <alice@example.com>
 - **부분 인용·해시 인용도 금지** — `sk-abc...xyz` (앞뒤 일부도 추론 가능), SHA256 해시도 brute-force 가능
 - **내부 인프라 정보 노출 금지** — 사설 IP, staging endpoint, 내부 도메인(`*.internal.`/`*.corp.`/`*.local`), localhost:포트
 - **PII(개인정보) 노출 금지** — 사용자 이메일·신용카드·주민번호·외국인등록번호·전화번호·운전면허·여권번호 (git commit author 이메일은 예외)
-- **PR 제목·커밋 메시지에 secret 금지** — s1ngularity 사고: PR title injection으로 secret 노출 가능
-- **HTML 주석·Markdown 숨김 영역에 secret 금지** — Copilot 사고: hidden comment 통한 유출 차단
+- **PR 제목·커밋 메시지에 secret 금지**
+- **HTML 주석·Markdown 숨김 영역에 secret 금지**
 - ⚠️ **public repo에서 secret 발견 시 즉시 rotate** — 봇이 수 분 내 수집함
 
 ### 스타일·내용
@@ -181,14 +181,12 @@ Co-authored-by: Alice <alice@example.com>
 
 ## Security Filter (다층 가드)
 
-**왜 필요한가**: 2024년 GitHub에서만 39M+ secrets, 2025년 28M+ 유출. Toyota는 5년간 access key 노출 → 27만 고객 정보 유출. tj-actions 사고는 23,000개 repo 영향. 한 번 push되면 git history에 영구 박힘 — **사고 후 복구는 거의 불가능**.
-
 ### 4단계 검사
 
 1. **위험 파일 차단** — `.env`, `*.pem`, `*.key`, `id_rsa`, `credentials.json`, `*.kubeconfig`, `*.sql.dump`, `*.csv`(사용자 데이터) 등이 diff에 들어 있으면 즉시 stop
 2. **Secret 패턴 50+ 검출** — 아래 표 참조
 3. **PII 검출** — 한국·미국 PII 패턴 (주민번호, 외국인등록번호, 신용카드, SSN 등)
-4. **숨김 영역 검사** — HTML 주석, Markdown 링크 hidden URL, 제로폭 문자, PR 제목·브랜치 이름 (s1ngularity·Copilot 사고 교훈)
+4. **숨김 영역 검사** — HTML 주석, Markdown 링크 hidden URL, 제로폭 문자, PR 제목·브랜치 이름
 
 ### 검출 패턴 50+
 
